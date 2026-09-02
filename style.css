@@ -1,3 +1,12 @@
+/* =========================================
+   EMİR TESİSAT ANTALYA
+   ANA STİL DOSYASI
+========================================= */
+
+/* =========================================
+   GENEL AYARLAR
+========================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +20,8 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    color: #172033;
-    background: #ffffff;
+    color: #1f2937;
+    background-color: #ffffff;
 }
 
 a {
@@ -26,670 +35,586 @@ img {
 }
 
 .container {
-    width: min(1120px, 92%);
-    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
-/* ÜST BAR */
+/* =========================================
+   HEADER
+========================================= */
 
-.top-bar {
-    background: #071a33;
-    color: white;
-    font-size: 14px;
-}
-
-.top-bar-content {
-    min-height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-}
-
-.top-bar a {
-    color: white;
-    font-weight: bold;
-}
-
-.top-bar a:hover {
-    color: #58c7ff;
-}
-
-
-/* NAVBAR */
-
-header {
-    background: white;
+.header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.navbar {
-    min-height: 76px;
+.header .container {
+    min-height: 72px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.logo-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    background: #0b5ed7;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.logo a {
     font-size: 25px;
-    font-weight: bold;
-}
-
-.logo-text strong {
-    display: block;
-    font-size: 20px;
-    color: #071a33;
-}
-
-.logo-text span {
-    font-size: 12px;
+    font-weight: 700;
     color: #0b5ed7;
-    font-weight: bold;
 }
 
-nav {
+.navbar {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 28px;
 }
 
-nav a {
+.navbar a {
+    font-size: 15px;
     font-weight: 600;
-    color: #25344d;
-    transition: 0.2s;
+    color: #374151;
+    transition: 0.3s ease;
 }
 
-nav a:hover {
+.navbar a:hover {
     color: #0b5ed7;
 }
 
-.nav-call {
-    background: #0b5ed7;
-    color: white !important;
-    padding: 11px 18px;
-    border-radius: 8px;
-}
 
-.nav-call:hover {
-    background: #084298;
-}
-
-
-/* HERO */
+/* =========================================
+   HERO / ANA SAYFA
+========================================= */
 
 .hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
     background:
         linear-gradient(
-            135deg,
-            rgba(4, 25, 55, 0.96),
-            rgba(11, 94, 215, 0.88)
+            90deg,
+            rgba(8, 40, 85, 0.95),
+            rgba(11, 94, 215, 0.82)
         );
-    color: white;
-    padding: 95px 0 90px;
+    color: #ffffff;
+    padding: 100px 0;
 }
 
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 60px;
-    align-items: center;
+.hero-content {
+    max-width: 720px;
 }
 
-.hero-badge {
+.hero-small {
     display: inline-block;
-    background: rgba(255,255,255,0.13);
-    border: 1px solid rgba(255,255,255,0.25);
+    margin-bottom: 18px;
     padding: 8px 15px;
-    border-radius: 50px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.14);
     font-size: 14px;
-    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 .hero h1 {
-    font-size: clamp(38px, 5vw, 62px);
-    line-height: 1.08;
+    font-size: 54px;
+    line-height: 1.15;
     margin-bottom: 22px;
 }
 
-.hero h1 span {
-    color: #62d5ff;
-}
-
-.hero p {
-    font-size: 19px;
-    color: #e7f2ff;
+.hero-content > p:not(.hero-small) {
     max-width: 650px;
-    margin-bottom: 30px;
+    font-size: 19px;
+    color: #e8f1ff;
+    margin-bottom: 32px;
 }
 
 .hero-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
+    gap: 15px;
 }
+
+
+/* =========================================
+   BUTONLAR
+========================================= */
 
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    padding: 14px 22px;
-    border-radius: 9px;
-    font-weight: bold;
-    transition: 0.2s;
+    min-height: 50px;
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.3s ease;
 }
 
 .btn-primary {
-    background: white;
-    color: #0758c9;
+    background-color: #ffffff;
+    color: #0b5ed7;
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px);
-    background: #f0f7ff;
-}
-
-.btn-whatsapp {
-    background: #20c76a;
-    color: white;
-}
-
-.btn-whatsapp:hover {
-    background: #16a957;
+    background-color: #f1f5f9;
     transform: translateY(-2px);
 }
 
-.hero-card {
-    background: white;
-    color: #172033;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+.btn-secondary {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    color: #ffffff;
 }
 
-.hero-card h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
+.btn-secondary:hover {
+    background-color: #ffffff;
+    color: #0b5ed7;
+    transform: translateY(-2px);
 }
 
-.hero-card-item {
-    display: flex;
-    align-items: center;
-    gap: 13px;
-    padding: 13px 0;
-    border-bottom: 1px solid #e7edf5;
+.btn-light {
+    background-color: #ffffff;
+    color: #0b5ed7;
 }
 
-.hero-card-item:last-child {
-    border-bottom: 0;
-}
-
-.check {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #e8f5ee;
-    color: #159447;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
+.btn-light:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 
-/* İSTATİSTİK */
+/* =========================================
+   ORTAK BÖLÜM BAŞLIKLARI
+========================================= */
 
-.stats {
-    background: #f5f9ff;
-    padding: 35px 0;
-}
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.section-title {
+    max-width: 760px;
+    margin: 0 auto 55px;
     text-align: center;
 }
 
-.stat {
-    padding: 10px 20px;
-    border-right: 1px solid #dbe5f0;
-}
-
-.stat:last-child {
-    border-right: 0;
-}
-
-.stat strong {
-    display: block;
+.section-title span,
+.section-label {
+    display: inline-block;
+    margin-bottom: 10px;
     color: #0b5ed7;
-    font-size: 32px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
 }
 
-.stat span {
-    color: #526176;
-}
-
-
-/* BÖLÜMLER */
-
-section {
-    padding: 85px 0;
-}
-
-.section-heading {
-    text-align: center;
-    max-width: 720px;
-    margin: 0 auto 50px;
-}
-
-.section-heading span {
-    color: #0b5ed7;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-
-.section-heading h2 {
+.section-title h2,
+.about-text h2 {
     font-size: 38px;
-    line-height: 1.2;
-    margin: 10px 0 15px;
-    color: #071a33;
+    line-height: 1.25;
+    color: #111827;
+    margin-bottom: 16px;
 }
 
-.section-heading p {
-    color: #607086;
+.section-title p {
+    font-size: 17px;
+    color: #6b7280;
 }
 
 
-/* HİZMETLER */
+/* =========================================
+   HİZMETLER
+========================================= */
 
 .services {
-    background: white;
+    padding: 100px 0;
+    background-color: #f8fafc;
 }
 
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+    gap: 25px;
 }
 
 .service-card {
-    border: 1px solid #e2eaf3;
-    border-radius: 16px;
-    padding: 28px;
-    background: white;
-    transition: 0.25s;
+    background-color: #ffffff;
+    padding: 32px 28px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(20,60,100,0.12);
-    border-color: #a8cbf5;
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.1);
+    border-color: #bfdbfe;
 }
 
 .service-icon {
     width: 58px;
     height: 58px;
-    background: #eaf3ff;
-    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 29px;
     margin-bottom: 20px;
+    border-radius: 12px;
+    background-color: #eff6ff;
+    font-size: 28px;
 }
 
 .service-card h3 {
-    margin-bottom: 10px;
-    color: #102541;
+    font-size: 20px;
+    color: #111827;
+    margin-bottom: 12px;
 }
 
 .service-card p {
-    color: #64748a;
+    color: #6b7280;
     font-size: 15px;
 }
 
 
-/* NEDEN BİZ */
+/* =========================================
+   HAKKIMIZDA
+========================================= */
 
-.why {
-    background: #f5f9ff;
+.about {
+    padding: 100px 0;
+    background-color: #ffffff;
 }
 
-.why-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: center;
+.about-content {
+    max-width: 950px;
+    margin: 0 auto;
 }
 
-.why-content h2 {
-    font-size: 40px;
-    line-height: 1.2;
+.about-text {
+    padding: 50px;
+    border-radius: 18px;
+    background-color: #f8fafc;
+    border: 1px solid #e5e7eb;
+}
+
+.about-text p {
+    color: #5f6b7a;
+    font-size: 17px;
     margin-bottom: 18px;
 }
 
-.why-content > p {
-    color: #617087;
-    margin-bottom: 25px;
-}
-
-.features {
+.advantages {
     display: grid;
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 30px;
 }
 
-.feature {
+.advantage {
     display: flex;
-    gap: 14px;
-    background: white;
-    padding: 18px;
-    border-radius: 12px;
-}
-
-.feature-icon {
-    font-size: 25px;
-}
-
-.feature strong {
-    display: block;
-    margin-bottom: 4px;
-}
-
-.feature p {
-    color: #66758a;
-    font-size: 14px;
-}
-
-.why-box {
-    background: #071a33;
-    color: white;
-    padding: 40px;
-    border-radius: 22px;
-}
-
-.why-box h3 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.why-box p {
-    color: #cbd8e8;
-}
-
-.why-box ul {
-    margin-top: 25px;
-    list-style: none;
-}
-
-.why-box li {
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.12);
-}
-
-
-/* HİZMET ALANI */
-
-.areas {
-    background: white;
-    text-align: center;
-}
-
-.area-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-}
-
-.area {
-    padding: 12px 18px;
-    background: #f1f6fc;
-    border-radius: 50px;
-    color: #29425e;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 18px;
+    background-color: #ffffff;
+    border-radius: 9px;
+    border: 1px solid #e5e7eb;
     font-weight: 600;
 }
 
-
-/* CTA */
-
-.cta {
-    background: #0b5ed7;
-    color: white;
-    text-align: center;
-}
-
-.cta h2 {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.cta p {
-    max-width: 650px;
-    margin: 0 auto 28px;
-    color: #e1efff;
+.advantage strong {
+    color: #0b5ed7;
+    font-size: 18px;
 }
 
 
-/* İLETİŞİM */
+/* =========================================
+   İLETİŞİM
+========================================= */
 
 .contact {
-    background: #f5f9ff;
+    padding: 100px 0;
+    background-color: #f8fafc;
 }
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
 .contact-card {
-    background: white;
-    padding: 30px;
-    border-radius: 16px;
-    border: 1px solid #e0e8f1;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 35px 25px;
+    border: 1px solid #e5e7eb;
+    transition: 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background-color: #eff6ff;
+    font-size: 27px;
 }
 
 .contact-card h3 {
-    margin-bottom: 20px;
-    color: #071a33;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #111827;
 }
 
-.contact-item {
+.contact-card p {
+    color: #6b7280;
+}
+
+
+/* =========================================
+   CTA ALANI
+========================================= */
+
+.cta {
+    padding: 80px 0;
+    background-color: #0b5ed7;
+    color: #ffffff;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+}
+
+.cta-content p {
+    margin-bottom: 28px;
+    font-size: 17px;
+    color: #e8f1ff;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 60px 0 25px;
+}
+
+.footer-content {
     display: flex;
-    gap: 14px;
-    margin-bottom: 20px;
-}
-
-.contact-item-icon {
-    width: 42px;
-    height: 42px;
-    background: #eaf3ff;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact-item strong {
-    display: block;
-}
-
-.contact-item span,
-.contact-item a {
-    color: #627188;
-}
-
-.contact-item a:hover {
-    color: #0b5ed7;
-}
-
-
-/* FOOTER */
-
-footer {
-    background: #071a33;
-    color: white;
-    padding: 35px 0;
-}
-
-.footer-grid {
-    display: flex;
+    align-items: flex-start;
     justify-content: space-between;
-    gap: 30px;
-    align-items: center;
+    gap: 40px;
+    padding-bottom: 35px;
 }
 
-footer p {
-    color: #aebed1;
-    font-size: 14px;
+.footer-brand h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.footer-brand p {
+    color: #94a3b8;
 }
 
 .footer-links {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 22px;
 }
 
 .footer-links a {
-    color: #dce7f3;
+    color: #cbd5e1;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    padding-top: 22px;
+    border-top: 1px solid #334155;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #94a3b8;
     font-size: 14px;
 }
 
 
-/* MOBİL BUTONLAR */
+/* =========================================
+   TABLET UYUMLULUĞU
+========================================= */
 
-.mobile-actions {
-    display: none;
-}
-
-
-/* MOBİL */
-
-@media (max-width: 850px) {
-
-    .top-bar-content {
-        justify-content: center;
-    }
-
-    .top-bar-content span {
-        display: none;
-    }
-
-    .navbar {
-        min-height: 68px;
-    }
-
-    nav {
-        display: none;
-    }
+@media (max-width: 900px) {
 
     .hero {
-        padding: 65px 0;
-    }
-
-    .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
+        min-height: 570px;
     }
 
     .hero h1 {
-        font-size: 42px;
-    }
-
-    .hero p {
-        font-size: 17px;
-    }
-
-    .stats-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .stat {
-        border-right: 0;
-        border-bottom: 1px solid #dbe5f0;
-        padding: 15px;
-    }
-
-    .stat:last-child {
-        border-bottom: 0;
-    }
-
-    section {
-        padding: 65px 0;
-    }
-
-    .section-heading h2 {
-        font-size: 31px;
+        font-size: 44px;
     }
 
     .services-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .why-grid {
-        grid-template-columns: 1fr;
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .why-content h2 {
-        font-size: 32px;
+    .navbar {
+        gap: 17px;
     }
 
+    .navbar a {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================
+   TELEFON UYUMLULUĞU
+========================================= */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .header .container {
+        min-height: 64px;
+        flex-direction: column;
+        justify-content: center;
+        padding: 12px 0;
+        gap: 10px;
+    }
+
+    .logo a {
+        font-size: 22px;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px 15px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 90px 0;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: 0 auto;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-content > p:not(.hero-small) {
+        font-size: 17px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .section-title h2,
+    .about-text h2 {
+        font-size: 31px;
+    }
+
+    .services,
+    .about,
+    .contact {
+        padding: 75px 0;
+    }
+
+    .services-grid,
     .contact-grid {
         grid-template-columns: 1fr;
     }
 
-    .footer-grid {
+    .about-text {
+        padding: 35px 25px;
+    }
+
+    .advantages {
+        grid-template-columns: 1fr;
+    }
+
+    .cta {
+        padding: 65px 0;
+    }
+
+    .cta-content h2 {
+        font-size: 30px;
+    }
+
+    .footer-content {
         flex-direction: column;
         text-align: center;
+        align-items: center;
     }
 
-    .mobile-actions {
-        display: flex;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 2000;
-        box-shadow: 0 -5px 20px rgba(0,0,0,0.15);
+    .footer-links {
+        justify-content: center;
+    }
+}
+
+
+/* =========================================
+   KÜÇÜK TELEFONLAR
+========================================= */
+
+@media (max-width: 420px) {
+
+    .hero h1 {
+        font-size: 32px;
     }
 
-    .mobile-actions a {
-        flex: 1;
-        text-align: center;
-        padding: 14px 8px;
-        color: white;
-        font-weight: bold;
+    .hero-buttons {
+        flex-direction: column;
     }
 
-    .mobile-call {
-        background: #0b5ed7;
+    .btn {
+        width: 100%;
     }
 
-    .mobile-whatsapp {
-        background: #20c76a;
+    .section-title h2,
+    .about-text h2 {
+        font-size: 27px;
     }
 
-    body {
-        padding-bottom: 55px;
+    .service-card {
+        padding: 27px 22px;
     }
 }
