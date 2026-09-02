@@ -1,854 +1,44 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Emir Tesisat Antalya | 7/24 Tesisatçı | Su Kaçağı ve Tıkanıklık</title>
+    <title>Emir Tesisat Antalya | Su Tesisatı ve Tesisatçı Hizmetleri</title>
 
     <meta name="description"
-          content="Emir Tesisat Antalya; su kaçağı tespiti, lavabo ve gider açma, tıkanıklık açma, sıhhi tesisat ve tesisat tamiri hizmetleri. Antalya Kepez ve çevresinde profesyonel tesisat hizmeti.">
+        content="Emir Tesisat Antalya - Su tesisatı, tesisat tamiri, musluk ve batarya değişimi, lavabo ve gider açma hizmetleri. Antalya'da güvenilir tesisat çözümleri.">
 
     <meta name="keywords"
-          content="Antalya tesisatçı, Kepez tesisatçı, su kaçağı, su kaçağı tespiti, tıkanıklık açma, lavabo açma, gider açma, sıhhi tesisat, Emir Tesisat Antalya">
+        content="Antalya tesisatçı, Antalya su tesisatçısı, Emir Tesisat, su tesisatı, gider açma, musluk tamiri, lavabo açma">
 
     <meta name="author" content="Emir Tesisat Antalya">
 
-    <meta name="robots" content="index, follow">
-
-    <meta name="theme-color" content="#0b5ed7">
-
-    <!-- Open Graph -->
-    <meta property="og:title"
-          content="Emir Tesisat Antalya | Profesyonel Tesisat Hizmetleri">
-
-    <meta property="og:description"
-          content="Antalya ve Kepez'de su kaçağı, tıkanıklık, sıhhi tesisat ve tesisat tamiri hizmetleri.">
-
-    <meta property="og:type" content="website">
-
-    <meta property="og:locale" content="tr_TR">
-
-
-    <style>
-
-        /* =====================================================
-           GENEL
-        ===================================================== */
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            color: #172033;
-            background: #ffffff;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        .container {
-            width: min(1120px, 92%);
-            margin: auto;
-        }
-
-
-        /* =====================================================
-           ÜST BİLGİ BAR
-        ===================================================== */
-
-        .top-bar {
-            background: #071a33;
-            color: white;
-            font-size: 14px;
-        }
-
-        .top-bar-content {
-            min-height: 42px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 15px;
-        }
-
-        .top-bar a {
-            color: white;
-            font-weight: bold;
-        }
-
-        .top-bar a:hover {
-            color: #58c7ff;
-        }
-
-
-        /* =====================================================
-           NAVBAR
-        ===================================================== */
-
-        header {
-            background: white;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
-        }
-
-        .navbar {
-            min-height: 76px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 30px;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .logo-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 12px;
-            background: #0b5ed7;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 25px;
-            font-weight: bold;
-        }
-
-        .logo-text strong {
-            display: block;
-            font-size: 20px;
-            color: #071a33;
-        }
-
-        .logo-text span {
-            font-size: 12px;
-            color: #0b5ed7;
-            font-weight: bold;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-        }
-
-        nav a {
-            font-weight: 600;
-            color: #25344d;
-            transition: 0.2s;
-        }
-
-        nav a:hover {
-            color: #0b5ed7;
-        }
-
-        .nav-call {
-            background: #0b5ed7;
-            color: white !important;
-            padding: 11px 18px;
-            border-radius: 8px;
-        }
-
-        .nav-call:hover {
-            background: #084298;
-        }
-
-
-        /* =====================================================
-           HERO
-        ===================================================== */
-
-        .hero {
-            background:
-                linear-gradient(
-                    135deg,
-                    rgba(4, 25, 55, 0.96),
-                    rgba(11, 94, 215, 0.88)
-                );
-
-            color: white;
-            padding: 95px 0 90px;
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .hero-badge {
-            display: inline-block;
-            background: rgba(255,255,255,0.13);
-            border: 1px solid rgba(255,255,255,0.25);
-            padding: 8px 15px;
-            border-radius: 50px;
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 {
-            font-size: clamp(38px, 5vw, 62px);
-            line-height: 1.08;
-            margin-bottom: 22px;
-        }
-
-        .hero h1 span {
-            color: #62d5ff;
-        }
-
-        .hero p {
-            font-size: 19px;
-            color: #e7f2ff;
-            max-width: 650px;
-            margin-bottom: 30px;
-        }
-
-        .hero-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            padding: 14px 22px;
-            border-radius: 9px;
-            font-weight: bold;
-            transition: 0.2s;
-        }
-
-        .btn-primary {
-            background: white;
-            color: #0758c9;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            background: #f0f7ff;
-        }
-
-        .btn-whatsapp {
-            background: #20c76a;
-            color: white;
-        }
-
-        .btn-whatsapp:hover {
-            background: #16a957;
-            transform: translateY(-2px);
-        }
-
-        .hero-card {
-            background: white;
-            color: #172033;
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.25);
-        }
-
-        .hero-card h3 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .hero-card-item {
-            display: flex;
-            align-items: center;
-            gap: 13px;
-            padding: 13px 0;
-            border-bottom: 1px solid #e7edf5;
-        }
-
-        .hero-card-item:last-child {
-            border-bottom: 0;
-        }
-
-        .check {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background: #e8f5ee;
-            color: #159447;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-
-
-        /* =====================================================
-           İSTATİSTİK
-        ===================================================== */
-
-        .stats {
-            background: #f5f9ff;
-            padding: 35px 0;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            text-align: center;
-        }
-
-        .stat {
-            padding: 10px 20px;
-            border-right: 1px solid #dbe5f0;
-        }
-
-        .stat:last-child {
-            border-right: 0;
-        }
-
-        .stat strong {
-            display: block;
-            color: #0b5ed7;
-            font-size: 32px;
-        }
-
-        .stat span {
-            color: #526176;
-        }
-
-
-        /* =====================================================
-           BÖLÜM GENEL
-        ===================================================== */
-
-        section {
-            padding: 85px 0;
-        }
-
-        .section-heading {
-            text-align: center;
-            max-width: 720px;
-            margin: 0 auto 50px;
-        }
-
-        .section-heading span {
-            color: #0b5ed7;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 14px;
-            letter-spacing: 1px;
-        }
-
-        .section-heading h2 {
-            font-size: 38px;
-            line-height: 1.2;
-            margin: 10px 0 15px;
-            color: #071a33;
-        }
-
-        .section-heading p {
-            color: #607086;
-        }
-
-
-        /* =====================================================
-           HİZMETLER
-        ===================================================== */
-
-        .services {
-            background: white;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 22px;
-        }
-
-        .service-card {
-            border: 1px solid #e2eaf3;
-            border-radius: 16px;
-            padding: 28px;
-            background: white;
-            transition: 0.25s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(20,60,100,0.12);
-            border-color: #a8cbf5;
-        }
-
-        .service-icon {
-            width: 58px;
-            height: 58px;
-            background: #eaf3ff;
-            border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 29px;
-            margin-bottom: 20px;
-        }
-
-        .service-card h3 {
-            margin-bottom: 10px;
-            color: #102541;
-        }
-
-        .service-card p {
-            color: #64748a;
-            font-size: 15px;
-        }
-
-
-        /* =====================================================
-           NEDEN BİZ
-        ===================================================== */
-
-        .why {
-            background: #f5f9ff;
-        }
-
-        .why-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-
-        .why-content h2 {
-            font-size: 40px;
-            line-height: 1.2;
-            margin-bottom: 18px;
-        }
-
-        .why-content > p {
-            color: #617087;
-            margin-bottom: 25px;
-        }
-
-        .features {
-            display: grid;
-            gap: 15px;
-        }
-
-        .feature {
-            display: flex;
-            gap: 14px;
-            background: white;
-            padding: 18px;
-            border-radius: 12px;
-        }
-
-        .feature-icon {
-            font-size: 25px;
-        }
-
-        .feature strong {
-            display: block;
-            margin-bottom: 4px;
-        }
-
-        .feature p {
-            color: #66758a;
-            font-size: 14px;
-        }
-
-        .why-box {
-            background: #071a33;
-            color: white;
-            padding: 40px;
-            border-radius: 22px;
-        }
-
-        .why-box h3 {
-            font-size: 28px;
-            margin-bottom: 15px;
-        }
-
-        .why-box p {
-            color: #cbd8e8;
-        }
-
-        .why-box ul {
-            margin-top: 25px;
-            list-style: none;
-        }
-
-        .why-box li {
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.12);
-        }
-
-
-        /* =====================================================
-           HİZMET ALANI
-        ===================================================== */
-
-        .areas {
-            background: white;
-            text-align: center;
-        }
-
-        .area-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
-        }
-
-        .area {
-            padding: 12px 18px;
-            background: #f1f6fc;
-            border-radius: 50px;
-            color: #29425e;
-            font-weight: 600;
-        }
-
-
-        /* =====================================================
-           CTA
-        ===================================================== */
-
-        .cta {
-            background: #0b5ed7;
-            color: white;
-            text-align: center;
-        }
-
-        .cta h2 {
-            font-size: 40px;
-            margin-bottom: 15px;
-        }
-
-        .cta p {
-            max-width: 650px;
-            margin: 0 auto 28px;
-            color: #e1efff;
-        }
-
-
-        /* =====================================================
-           İLETİŞİM
-        ===================================================== */
-
-        .contact {
-            background: #f5f9ff;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-        }
-
-        .contact-card {
-            background: white;
-            padding: 30px;
-            border-radius: 16px;
-            border: 1px solid #e0e8f1;
-        }
-
-        .contact-card h3 {
-            margin-bottom: 20px;
-            color: #071a33;
-        }
-
-        .contact-item {
-            display: flex;
-            gap: 14px;
-            margin-bottom: 20px;
-        }
-
-        .contact-item-icon {
-            width: 42px;
-            height: 42px;
-            background: #eaf3ff;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .contact-item strong {
-            display: block;
-        }
-
-        .contact-item span,
-        .contact-item a {
-            color: #627188;
-        }
-
-        .contact-item a:hover {
-            color: #0b5ed7;
-        }
-
-
-        /* =====================================================
-           FOOTER
-        ===================================================== */
-
-        footer {
-            background: #071a33;
-            color: white;
-            padding: 35px 0;
-        }
-
-        .footer-grid {
-            display: flex;
-            justify-content: space-between;
-            gap: 30px;
-            align-items: center;
-        }
-
-        footer p {
-            color: #aebed1;
-            font-size: 14px;
-        }
-
-        .footer-links {
-            display: flex;
-            gap: 20px;
-        }
-
-        .footer-links a {
-            color: #dce7f3;
-            font-size: 14px;
-        }
-
-
-        /* =====================================================
-           MOBİL SABİT BUTONLAR
-        ===================================================== */
-
-        .mobile-actions {
-            display: none;
-        }
-
-
-        /* =====================================================
-           MOBİL
-        ===================================================== */
-
-        @media (max-width: 850px) {
-
-            .top-bar-content {
-                justify-content: center;
-            }
-
-            .top-bar-content span {
-                display: none;
-            }
-
-            .navbar {
-                min-height: 68px;
-            }
-
-            nav {
-                display: none;
-            }
-
-            .hero {
-                padding: 65px 0;
-            }
-
-            .hero-grid {
-                grid-template-columns: 1fr;
-                gap: 35px;
-            }
-
-            .hero h1 {
-                font-size: 42px;
-            }
-
-            .hero p {
-                font-size: 17px;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .stat {
-                border-right: 0;
-                border-bottom: 1px solid #dbe5f0;
-                padding: 15px;
-            }
-
-            .stat:last-child {
-                border-bottom: 0;
-            }
-
-            section {
-                padding: 65px 0;
-            }
-
-            .section-heading h2 {
-                font-size: 31px;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .why-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .why-content h2 {
-                font-size: 32px;
-            }
-
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-grid {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .mobile-actions {
-                display: flex;
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                z-index: 2000;
-                box-shadow: 0 -5px 20px rgba(0,0,0,0.15);
-            }
-
-            .mobile-actions a {
-                flex: 1;
-                text-align: center;
-                padding: 14px 8px;
-                color: white;
-                font-weight: bold;
-            }
-
-            .mobile-call {
-                background: #0b5ed7;
-            }
-
-            .mobile-whatsapp {
-                background: #20c76a;
-            }
-
-            body {
-                padding-bottom: 55px;
-            }
-        }
-
-    </style>
-
-
-    <!-- =====================================================
-         LOCAL BUSINESS SCHEMA
-    ====================================================== -->
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Plumber",
-        "name": "Emir Tesisat Antalya",
-        "url": "https://emirtesisatantalya.com/",
-        "telephone": "+905332527384",
-        "email": "emirsihhitesisat@gmail.com",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "3819. Sk. No:10, Kültür",
-            "addressLocality": "Kepez",
-            "addressRegion": "Antalya",
-            "postalCode": "07090",
-            "addressCountry": "TR"
-        },
-        "areaServed": [
-            "Antalya",
-            "Kepez"
-        ]
-    }
-    </script>
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+    <!-- =========================
+         ÜST MENÜ
+    ========================== -->
+    <header class="header">
 
-    <!-- =====================================================
-         ÜST BAR
-    ====================================================== -->
+        <div class="container">
 
-    <div class="top-bar">
-        <div class="container top-bar-content">
-
-            <span>🔧 Antalya'da Profesyonel Tesisat Hizmeti</span>
-
-            <a href="tel:+905332527384">
-                📞 0533 252 73 84
-            </a>
-
-        </div>
-    </div>
-
-
-    <!-- =====================================================
-         NAVBAR
-    ====================================================== -->
-
-    <header>
-
-        <div class="container navbar">
-
-            <a href="#anasayfa" class="logo">
-
-                <div class="logo-icon">
-                    🔧
-                </div>
-
-                <div class="logo-text">
-                    <strong>EMİR TESİSAT</strong>
-                    <span>ANTALYA</span>
-                </div>
-
-            </a>
-
-
-            <nav>
-
-                <a href="#anasayfa">Ana Sayfa</a>
-
-                <a href="#hizmetler">Hizmetler</a>
-
-                <a href="#neden-biz">Neden Biz?</a>
-
-                <a href="#iletisim">İletişim</a>
-
-                <a class="nav-call" href="tel:+905332527384">
-                    📞 Hemen Ara
+            <div class="logo">
+                <a href="#anasayfa">
+                    Emir Tesisat
                 </a>
+            </div>
 
+            <nav class="navbar">
+                <a href="#anasayfa">Ana Sayfa</a>
+                <a href="#hizmetler">Hizmetlerimiz</a>
+                <a href="#hakkimizda">Hakkımızda</a>
+                <a href="#iletisim">İletişim</a>
             </nav>
 
         </div>
@@ -856,79 +46,41 @@
     </header>
 
 
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
-
     <main>
 
-        <section class="hero" id="anasayfa">
+        <!-- =========================
+             ANA SAYFA / HERO
+        ========================== -->
+        <section id="anasayfa" class="hero">
 
-            <div class="container hero-grid">
+            <div class="container">
 
-                <div>
+                <div class="hero-content">
 
-                    <div class="hero-badge">
-                        🔧 Antalya • Kepez • Profesyonel Tesisat
-                    </div>
+                    <p class="hero-small">
+                        Antalya Tesisat Hizmetleri
+                    </p>
 
                     <h1>
-                        Antalya'nın
-                        <span>Güvenilir</span>
-                        Tesisatçısı
+                        Antalya'da Güvenilir
+                        Tesisat Çözümleri
                     </h1>
 
                     <p>
-                        Su kaçağı, tıkanıklık, lavabo ve gider problemleri,
-                        sıhhi tesisat ve tesisat tamiri için profesyonel
-                        çözümler sunuyoruz.
+                        Su tesisatı, arıza, bakım ve onarım işleriniz için
+                        hızlı ve güvenilir çözümler sunuyoruz.
                     </p>
 
                     <div class="hero-buttons">
 
-                        <a
-                            href="tel:+905332527384"
-                            class="btn btn-primary">
-                            📞 Hemen Ara
+                        <a href="#iletisim" class="btn btn-primary">
+                            Bize Ulaşın
                         </a>
 
-                        <a
-                            href="https://wa.me/905332527384"
-                            class="btn btn-whatsapp"
-                            target="_blank"
-                            rel="noopener">
-                            💬 WhatsApp
+                        <a href="#hizmetler" class="btn btn-secondary">
+                            Hizmetlerimizi İnceleyin
                         </a>
 
-                    </div>
-
-                </div>
-
-
-                <div class="hero-card">
-
-                    <h3>
-                        Neden Emir Tesisat?
-                    </h3>
-
-                    <div class="hero-card-item">
-                        <div class="check">✓</div>
-                        <span>Tecrübeli tesisat hizmeti</span>
-                    </div>
-
-                    <div class="hero-card-item">
-                        <div class="check">✓</div>
-                        <span>Hızlı müdahale</span>
-                    </div>
-
-                    <div class="hero-card-item">
-                        <div class="check">✓</div>
-                        <span>Profesyonel çözüm</span>
-                    </div>
-
-                    <div class="hero-card-item">
-                        <div class="check">✓</div>
-                        <span>Antalya ve Kepez çevresi</span>
                     </div>
 
                 </div>
@@ -938,55 +90,24 @@
         </section>
 
 
-        <!-- =================================================
-             İSTATİSTİK
-        ================================================== -->
-
-        <section class="stats">
-
-            <div class="container stats-grid">
-
-                <div class="stat">
-                    <strong>20+</strong>
-                    <span>Yıllık Tecrübe</span>
-                </div>
-
-                <div class="stat">
-                    <strong>24/7</strong>
-                    <span>Hızlı İletişim</span>
-                </div>
-
-                <div class="stat">
-                    <strong>100%</strong>
-                    <span>Çözüm Odaklı Hizmet</span>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
+        <!-- =========================
              HİZMETLER
-        ================================================== -->
-
-        <section class="services" id="hizmetler">
+        ========================== -->
+        <section id="hizmetler" class="services">
 
             <div class="container">
 
-                <div class="section-heading">
+                <div class="section-title">
 
-                    <span>Hizmetlerimiz</span>
+                    <span>HİZMETLERİMİZ</span>
 
                     <h2>
-                        Tesisat Problemleriniz İçin
-                        Profesyonel Çözümler
+                        Tesisat Sorunlarınıza Profesyonel Çözümler
                     </h2>
 
                     <p>
-                        Ev, iş yeri ve diğer yaşam alanlarında
-                        karşılaştığınız tesisat sorunlarına
-                        çözüm sunuyoruz.
+                        Ev ve iş yerlerinizde ihtiyaç duyduğunuz
+                        tesisat hizmetlerini güvenilir şekilde gerçekleştiriyoruz.
                     </p>
 
                 </div>
@@ -994,115 +115,100 @@
 
                 <div class="services-grid">
 
-
-                    <div class="service-card">
+                    <article class="service-card">
 
                         <div class="service-icon">
                             💧
                         </div>
 
-                        <h3>
-                            Su Kaçağı Tespiti
-                        </h3>
+                        <h3>Su Tesisatı</h3>
 
                         <p>
-                            Duvar, zemin ve tesisat hatlarında
-                            oluşabilecek su kaçaklarının tespiti
-                            ve onarımı.
+                            Temiz ve kullanma suyu tesisatlarında oluşan
+                            problemlerin bakım ve onarımını gerçekleştiriyoruz.
                         </p>
 
-                    </div>
+                    </article>
 
 
-                    <div class="service-card">
-
-                        <div class="service-icon">
-                            🚿
-                        </div>
-
-                        <h3>
-                            Tıkanıklık Açma
-                        </h3>
-
-                        <p>
-                            Lavabo, mutfak, banyo, WC ve gider
-                            tıkanıklıklarına yönelik profesyonel
-                            müdahale.
-                        </p>
-
-                    </div>
-
-
-                    <div class="service-card">
+                    <article class="service-card">
 
                         <div class="service-icon">
                             🔧
                         </div>
 
-                        <h3>
-                            Sıhhi Tesisat
-                        </h3>
+                        <h3>Tesisat Tamiri</h3>
 
                         <p>
-                            Temiz su ve atık su tesisatlarında
-                            bakım, onarım ve yenileme hizmetleri.
+                            Tesisat sistemlerinde meydana gelen arızaların
+                            tespit ve onarımını gerçekleştiriyoruz.
                         </p>
 
-                    </div>
+                    </article>
 
 
-                    <div class="service-card">
+                    <article class="service-card">
 
                         <div class="service-icon">
-                            🚰
+                            🚿
                         </div>
 
-                        <h3>
-                            Musluk ve Batarya
-                        </h3>
+                        <h3>Musluk ve Batarya</h3>
 
                         <p>
-                            Musluk, batarya ve bağlantı noktalarında
-                            meydana gelen arızaların giderilmesi.
+                            Arızalı veya eski musluk ve bataryaların
+                            tamir ve değişim işlemlerini yapıyoruz.
                         </p>
 
-                    </div>
+                    </article>
 
 
-                    <div class="service-card">
+                    <article class="service-card">
 
                         <div class="service-icon">
-                            🛁
+                            🛠️
                         </div>
 
-                        <h3>
-                            Banyo Tesisatı
-                        </h3>
+                        <h3>Lavabo ve Gider</h3>
 
                         <p>
-                            Banyo tesisatı, giderler, sifonlar ve
-                            bağlantı sistemleri için bakım ve onarım.
+                            Lavabo ve gider sistemlerinde meydana gelen
+                            tesisat problemlerine çözüm sunuyoruz.
                         </p>
 
-                    </div>
+                    </article>
 
 
-                    <div class="service-card">
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            🚽
+                        </div>
+
+                        <h3>Banyo ve WC Tesisatı</h3>
+
+                        <p>
+                            Banyo ve WC alanlarında tesisat bakım,
+                            onarım ve yenileme hizmetleri sunuyoruz.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
 
                         <div class="service-icon">
                             🏠
                         </div>
 
-                        <h3>
-                            Tesisat Tamiri
-                        </h3>
+                        <h3>Ev ve İşyeri Tesisatı</h3>
 
                         <p>
-                            Ev ve iş yerlerindeki çeşitli tesisat
-                            arızalarının tespiti ve giderilmesi.
+                            Ev ve iş yerleri için ihtiyaç duyulan
+                            tesisat uygulamalarını gerçekleştiriyoruz.
                         </p>
 
-                    </div>
+                    </article>
 
                 </div>
 
@@ -1111,212 +217,62 @@
         </section>
 
 
-        <!-- =================================================
-             NEDEN BİZ
-        ================================================== -->
-
-        <section class="why" id="neden-biz">
-
-            <div class="container why-grid">
-
-
-                <div class="why-content">
-
-                    <h2>
-                        Tesisat İşinde
-                        Güven Neden Önemli?
-                    </h2>
-
-                    <p>
-                        Tesisat problemleri ertelendiğinde daha büyük
-                        hasarlara ve daha yüksek maliyetlere neden olabilir.
-                        Doğru tespit ve doğru müdahale önemlidir.
-                    </p>
-
-
-                    <div class="features">
-
-
-                        <div class="feature">
-
-                            <div class="feature-icon">
-                                🛠️
-                            </div>
-
-                            <div>
-                                <strong>
-                                    Tecrübeli Hizmet
-                                </strong>
-
-                                <p>
-                                    Yılların verdiği saha tecrübesiyle
-                                    çözüm odaklı çalışma.
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        <div class="feature">
-
-                            <div class="feature-icon">
-                                ⚡
-                            </div>
-
-                            <div>
-                                <strong>
-                                    Hızlı Müdahale
-                                </strong>
-
-                                <p>
-                                    Tesisat problemlerinde mümkün olan
-                                    en kısa sürede iletişim ve müdahale.
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        <div class="feature">
-
-                            <div class="feature-icon">
-                                🔍
-                            </div>
-
-                            <div>
-                                <strong>
-                                    Sorun Odaklı Tespit
-                                </strong>
-
-                                <p>
-                                    Problemin kaynağını belirleyerek
-                                    uygun çözümü uygulama.
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-
-                <div class="why-box">
-
-                    <h3>
-                        Bir Tesisat Sorununuz mu Var?
-                    </h3>
-
-                    <p>
-                        Sorunun büyümesini beklemeyin.
-                        Bize ulaşın, probleminizi birlikte değerlendirelim.
-                    </p>
-
-                    <ul>
-
-                        <li>✓ Su kaçağı</li>
-
-                        <li>✓ Lavabo tıkanıklığı</li>
-
-                        <li>✓ Gider tıkanıklığı</li>
-
-                        <li>✓ Sıhhi tesisat arızaları</li>
-
-                        <li>✓ Musluk ve batarya arızaları</li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             HİZMET BÖLGELERİ
-        ================================================== -->
-
-        <section class="areas">
+        <!-- =========================
+             HAKKIMIZDA
+        ========================== -->
+        <section id="hakkimizda" class="about">
 
             <div class="container">
 
-                <div class="section-heading">
+                <div class="about-content">
 
-                    <span>Hizmet Bölgemiz</span>
+                    <div class="about-text">
 
-                    <h2>
-                        Antalya ve Çevresinde Hizmet
-                    </h2>
+                        <span class="section-label">
+                            HAKKIMIZDA
+                        </span>
 
-                    <p>
-                        Özellikle Kepez ve Antalya çevresinde
-                        tesisat hizmetleri için bizimle iletişime geçebilirsiniz.
-                    </p>
+                        <h2>
+                            Emir Tesisat Antalya
+                        </h2>
 
-                </div>
+                        <p>
+                            Emir Tesisat olarak Antalya'da ev ve iş yerlerine
+                            tesisat bakım, onarım ve uygulama hizmetleri sunuyoruz.
+                        </p>
+
+                        <p>
+                            Amacımız tesisat sorunlarını doğru şekilde tespit
+                            ederek müşterilerimize güvenilir ve kalıcı çözümler
+                            sunmaktır.
+                        </p>
 
 
-                <div class="area-list">
+                        <div class="advantages">
 
-                    <div class="area">
-                        📍 Antalya
+                            <div class="advantage">
+                                <strong>✓</strong>
+                                Güvenilir Hizmet
+                            </div>
+
+                            <div class="advantage">
+                                <strong>✓</strong>
+                                Hızlı Çözüm
+                            </div>
+
+                            <div class="advantage">
+                                <strong>✓</strong>
+                                Profesyonel İşçilik
+                            </div>
+
+                            <div class="advantage">
+                                <strong>✓</strong>
+                                Müşteri Memnuniyeti
+                            </div>
+
+                        </div>
+
                     </div>
-
-                    <div class="area">
-                        📍 Kepez
-                    </div>
-
-                    <div class="area">
-                        📍 Kültür
-                    </div>
-
-                    <div class="area">
-                        📍 Antalya Çevresi
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             CTA
-        ================================================== -->
-
-        <section class="cta">
-
-            <div class="container">
-
-                <h2>
-                    Tesisat Sorununuz mu Var?
-                </h2>
-
-                <p>
-                    Bize telefon veya WhatsApp üzerinden ulaşın.
-                    Sorununuzu anlatın, size yardımcı olalım.
-                </p>
-
-
-                <div class="hero-buttons"
-                     style="justify-content:center;">
-
-                    <a
-                        href="tel:+905332527384"
-                        class="btn btn-primary">
-                        📞 0533 252 73 84
-                    </a>
-
-                    <a
-                        href="https://wa.me/905332527384"
-                        class="btn btn-whatsapp"
-                        target="_blank"
-                        rel="noopener">
-                        💬 WhatsApp'tan Yaz
-                    </a>
 
                 </div>
 
@@ -1325,25 +281,24 @@
         </section>
 
 
-        <!-- =================================================
+        <!-- =========================
              İLETİŞİM
-        ================================================== -->
-
-        <section class="contact" id="iletisim">
+        ========================== -->
+        <section id="iletisim" class="contact">
 
             <div class="container">
 
-                <div class="section-heading">
+                <div class="section-title">
 
-                    <span>İletişim</span>
+                    <span>İLETİŞİM</span>
 
                     <h2>
-                        Emir Tesisat Antalya
+                        Tesisat Sorununuz mu Var?
                     </h2>
 
                     <p>
-                        Tesisat hizmetleri hakkında bilgi almak
-                        için bizimle iletişime geçebilirsiniz.
+                        Hizmetlerimiz hakkında bilgi almak ve bize ulaşmak
+                        için iletişim bilgilerimizi kullanabilirsiniz.
                     </p>
 
                 </div>
@@ -1351,164 +306,78 @@
 
                 <div class="contact-grid">
 
-
                     <div class="contact-card">
 
-                        <h3>
-                            İletişim Bilgileri
-                        </h3>
-
-
-                        <div class="contact-item">
-
-                            <div class="contact-item-icon">
-                                📞
-                            </div>
-
-                            <div>
-                                <strong>Telefon</strong>
-
-                                <a href="tel:+905332527384">
-                                    0533 252 73 84
-                                </a>
-                            </div>
-
+                        <div class="contact-icon">
+                            📞
                         </div>
 
+                        <h3>Telefon</h3>
 
-                        <div class="contact-item">
-
-                            <div class="contact-item-icon">
-                                💬
-                            </div>
-
-                            <div>
-                                <strong>WhatsApp</strong>
-
-                                <a
-                                    href="https://wa.me/905332527384"
-                                    target="_blank"
-                                    rel="noopener">
-                                    WhatsApp'tan Mesaj Gönder
-                                </a>
-                            </div>
-
-                        </div>
-
-
-                        <div class="contact-item">
-
-                            <div class="contact-item-icon">
-                                ✉️
-                            </div>
-
-                            <div>
-                                <strong>E-posta</strong>
-
-                                <a href="mailto:emirsihhitesisat@gmail.com">
-                                    emirsihhitesisat@gmail.com
-                                </a>
-                            </div>
-
-                        </div>
-
-
-                        <div class="contact-item">
-
-                            <div class="contact-item-icon">
-                                📍
-                            </div>
-
-                            <div>
-                                <strong>Adres</strong>
-
-                                <span>
-                                    Kültür, 3819. Sk. No:10<br>
-                                    07090 Kepez / Antalya
-                                </span>
-                            </div>
-
-                        </div>
+                        <p>
+                            Telefon numarası eklenecek
+                        </p>
 
                     </div>
 
 
                     <div class="contact-card">
 
-                        <h3>
-                            Çalışma Bilgileri
-                        </h3>
-
-                        <div class="contact-item">
-
-                            <div class="contact-item-icon">
-                                🕐
-                            </div>
-
-                            <div>
-                                <strong>
-                                    Hizmet Günleri
-                                </strong>
-
-                                <span>
-                                    Pazartesi - Cumartesi
-                                </span>
-                            </div>
-
+                        <div class="contact-icon">
+                            💬
                         </div>
 
+                        <h3>WhatsApp</h3>
 
-                        <div class="contact-item">
-
-                            <div class="contact-item-icon">
-                                🔧
-                            </div>
-
-                            <div>
-                                <strong>
-                                    Hizmet Alanı
-                                </strong>
-
-                                <span>
-                                    Antalya ve özellikle Kepez
-                                    çevresi
-                                </span>
-                            </div>
-
-                        </div>
-
-
-                        <div class="contact-item">
-
-                            <div class="contact-item-icon">
-                                ⭐
-                            </div>
-
-                            <div>
-                                <strong>
-                                    Tecrübe
-                                </strong>
-
-                                <span>
-                                    20 yılı aşkın sektör tecrübesi
-                                </span>
-                            </div>
-
-                        </div>
-
-
-                        <a
-                            href="tel:+905332527384"
-                            class="btn"
-                            style="
-                                width:100%;
-                                background:#0b5ed7;
-                                color:white;
-                                margin-top:10px;">
-                            📞 Şimdi Ara
-                        </a>
+                        <p>
+                            WhatsApp numarası eklenecek
+                        </p>
 
                     </div>
+
+
+                    <div class="contact-card">
+
+                        <div class="contact-icon">
+                            📍
+                        </div>
+
+                        <h3>Hizmet Bölgesi</h3>
+
+                        <p>
+                            Antalya
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ÇAĞRI ALANI
+        ========================== -->
+        <section class="cta">
+
+            <div class="container">
+
+                <div class="cta-content">
+
+                    <h2>
+                        Tesisat İşleriniz İçin Bizimle İletişime Geçin
+                    </h2>
+
+                    <p>
+                        Emir Tesisat Antalya olarak tesisat ihtiyaçlarınıza
+                        hızlı ve güvenilir çözümler sunuyoruz.
+                    </p>
+
+                    <a href="#iletisim" class="btn btn-light">
+                        İletişime Geç
+                    </a>
 
                 </div>
 
@@ -1519,82 +388,56 @@
     </main>
 
 
-    <!-- =====================================================
+    <!-- =========================
          FOOTER
-    ====================================================== -->
+    ========================== -->
+    <footer class="footer">
 
-    <footer>
+        <div class="container">
 
-        <div class="container footer-grid">
+            <div class="footer-content">
 
-            <div>
+                <div class="footer-brand">
 
-                <strong>
-                    🔧 EMİR TESİSAT ANTALYA
-                </strong>
+                    <h3>
+                        Emir Tesisat
+                    </h3>
+
+                    <p>
+                        Antalya'da güvenilir tesisat çözümleri.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <a href="#anasayfa">Ana Sayfa</a>
+                    <a href="#hizmetler">Hizmetlerimiz</a>
+                    <a href="#hakkimizda">Hakkımızda</a>
+                    <a href="#iletisim">İletişim</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
 
                 <p>
-                    Profesyonel tesisat hizmetleri
+                    © 2026 Emir Tesisat Antalya. Tüm hakları saklıdır.
                 </p>
 
             </div>
-
-
-            <div class="footer-links">
-
-                <a href="#anasayfa">
-                    Ana Sayfa
-                </a>
-
-                <a href="#hizmetler">
-                    Hizmetler
-                </a>
-
-                <a href="#iletisim">
-                    İletişim
-                </a>
-
-            </div>
-
-        </div>
-
-        <div
-            style="
-                text-align:center;
-                margin-top:25px;
-                color:#8094aa;
-                font-size:13px;">
-
-            © 2026 Emir Tesisat Antalya.
-            Tüm hakları saklıdır.
 
         </div>
 
     </footer>
 
 
-    <!-- =====================================================
-         MOBİL SABİT BUTONLAR
-    ====================================================== -->
-
-    <div class="mobile-actions">
-
-        <a
-            class="mobile-call"
-            href="tel:+905332527384">
-            📞 ARA
-        </a>
-
-        <a
-            class="mobile-whatsapp"
-            href="https://wa.me/905332527384"
-            target="_blank"
-            rel="noopener">
-            💬 WHATSAPP
-        </a>
-
-    </div>
-
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
 </body>
+
 </html>
