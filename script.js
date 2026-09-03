@@ -1,78 +1,35 @@
-// ==========================================
-// EMİR TESİSAT ANTALYA
-// ANA JAVASCRIPT DOSYASI
-// ==========================================
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    // Menü bağlantıları
-    const navLinks = document.querySelectorAll(
-        '.navbar a, .footer-links a, .hero-buttons a'
-    );
-
-    // Yumuşak kaydırma
-    navLinks.forEach(function (link) {
-
-        link.addEventListener("click", function (event) {
-
-            const targetId = this.getAttribute("href");
-
-            if (targetId && targetId.startsWith("#")) {
-
-                const targetSection = document.querySelector(targetId);
-
-                if (targetSection) {
-
-                    event.preventDefault();
-
-                    targetSection.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start"
-                    });
-
-                }
-            }
-
-        });
-
-    });
-
-
-    // Sayfa kaydırıldığında header gölgesi
+document.addEventListener("DOMContentLoaded", () => {
+    const menuButton = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".navbar");
     const header = document.querySelector(".header");
 
-    window.addEventListener("scroll", function () {
+    const closeMenu = () => {
+        menu.classList.remove("open");
+        menuButton.classList.remove("active");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Menüyü aç");
+        document.body.classList.remove("menu-open");
+    };
 
-        if (window.scrollY > 30) {
-
-            header.style.boxShadow =
-                "0 4px 18px rgba(0, 0, 0, 0.10)";
-
-        } else {
-
-            header.style.boxShadow =
-                "0 2px 10px rgba(0, 0, 0, 0.05)";
-
-        }
-
+    menuButton.addEventListener("click", () => {
+        const isOpen = menu.classList.toggle("open");
+        menuButton.classList.toggle("active", isOpen);
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuButton.setAttribute("aria-label", isOpen ? "Menüyü kapat" : "Menüyü aç");
+        document.body.classList.toggle("menu-open", isOpen);
     });
 
+    menu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeMenu();
+    });
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 720) closeMenu();
+    });
 
-    // Footer yılını otomatik güncelle
-    const footerText = document.querySelector(".footer-bottom p");
+    window.addEventListener("scroll", () => {
+        header.classList.toggle("scrolled", window.scrollY > 20);
+    }, { passive: true });
 
-    if (footerText) {
-
-        const currentYear = new Date().getFullYear();
-
-        footerText.innerHTML =
-            "© " +
-            currentYear +
-            " Emir Tesisat Antalya. Tüm hakları saklıdır.";
-
-    }
-
-
-    console.log("Emir Tesisat Antalya web sitesi başarıyla yüklendi.");
-
+    document.getElementById("current-year").textContent = new Date().getFullYear();
 });
