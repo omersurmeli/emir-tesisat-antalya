@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 700" role="img" aria-labelledby="title desc">
+<title id="title">Profesyonel tesisat ustası</title><desc id="desc">Elinde İngiliz anahtarı taşıyan tesisat ustası illüstrasyonu</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e5f8f8"/><stop offset="1" stop-color="#b9e4e8"/></linearGradient><linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0aa0ad"/><stop offset="1" stop-color="#075268"/></linearGradient></defs>
+<rect width="760" height="700" rx="48" fill="url(#bg)"/><circle cx="575" cy="125" r="78" fill="#fff" opacity=".55"/><circle cx="115" cy="545" r="105" fill="#fff" opacity=".4"/>
+<path d="M55 620h650" stroke="#7dc7ce" stroke-width="5" stroke-linecap="round"/>
+<path d="M170 620V492a34 34 0 0 1 34-34h86V330" fill="none" stroke="#f3a64c" stroke-width="27" stroke-linejoin="round"/><path d="M170 528h67" stroke="#fff" stroke-width="8" opacity=".55"/>
+<circle cx="415" cy="221" r="93" fill="#e6aa7b"/><path d="M319 207c8-88 55-130 125-115 51 11 75 51 65 108-44-2-77-15-104-43-17 30-44 47-86 50Z" fill="#063b4b"/>
+<path d="M314 196c-9-41 13-91 57-108 58-23 118 6 139 59Z" fill="#f3a64c"/><path d="M305 187h223" stroke="#df8e32" stroke-width="18" stroke-linecap="round"/>
+<circle cx="382" cy="219" r="7" fill="#20353a"/><circle cx="457" cy="219" r="7" fill="#20353a"/><path d="M398 263c18 13 38 13 57 0" fill="none" stroke="#8f4d3e" stroke-width="7" stroke-linecap="round"/>
+<path d="M270 614c-2-151 16-248 58-290 28-28 151-27 181 5 42 44 57 140 50 285Z" fill="url(#shirt)"/><path d="M369 314v300M468 314v300" stroke="#fff" stroke-width="8" opacity=".22"/><path d="M316 372c-62 42-85 92-82 151" fill="none" stroke="#e6aa7b" stroke-width="44" stroke-linecap="round"/><path d="M520 375c65 39 91 88 96 147" fill="none" stroke="#e6aa7b" stroke-width="44" stroke-linecap="round"/>
+<path d="M580 496l49-83-18-28 22-38 28 45-44 124" fill="#667980"/><circle cx="601" cy="521" r="28" fill="#e6aa7b"/><path d="M315 330h205" stroke="#06475a" stroke-width="12"/><rect x="328" y="371" width="70" height="42" rx="8" fill="#fff" opacity=".92"/><text x="363" y="397" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#075268">EMİR</text>
+</svg>
