@@ -35,3 +35,17 @@ document.addEventListener("keydown", (event) => {
 window.addEventListener("resize", () => { if (window.innerWidth > 760) closeMenu(); });
 window.addEventListener("scroll", () => header.classList.toggle("scrolled", window.scrollY > 16), { passive: true });
 document.getElementById("current-year").textContent = new Date().getFullYear();
+
+document.querySelectorAll(".accordion button").forEach((button) => {
+  button.addEventListener("click", () => {
+    const wasOpen = button.getAttribute("aria-expanded") === "true";
+    document.querySelectorAll(".accordion button").forEach((item) => {
+      item.setAttribute("aria-expanded", "false");
+      item.nextElementSibling.hidden = true;
+    });
+    if (!wasOpen) {
+      button.setAttribute("aria-expanded", "true");
+      button.nextElementSibling.hidden = false;
+    }
+  });
+});
