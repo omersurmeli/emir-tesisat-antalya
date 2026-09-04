@@ -12,3 +12,27 @@ footer{padding-top:55px;color:#fff;background:#051628}.footer-grid{display:grid;
 @media(max-width:760px){html{scroll-padding-top:70px}.container{width:min(100% - 28px,1180px)}body.menu-open{overflow:hidden}.topbar{display:none}.nav-row{height:70px}.brand img{width:165px}.menu-toggle{display:block;position:relative;z-index:2}.menu-toggle.active i:nth-of-type(1){transform:translateY(8px) rotate(45deg)}.menu-toggle.active i:nth-of-type(2){opacity:0}.menu-toggle.active i:nth-of-type(3){transform:translateY(-8px) rotate(-45deg)}.nav{position:fixed;top:70px;left:0;right:0;display:flex;align-items:stretch;flex-direction:column;gap:0;padding:10px 20px 24px;background:#fff;box-shadow:0 15px 30px rgba(7,29,53,.16);transform:translateY(-130%);opacity:0;visibility:hidden;transition:.25s}.nav.open{transform:none;opacity:1;visibility:visible}.nav a{padding:13px 5px;border-bottom:1px solid var(--line);font-size:13px}.nav-cta{justify-content:center;margin-top:10px;border:0!important}.hero,.hero-inner{min-height:700px}.hero-media{background-image:linear-gradient(180deg,rgba(7,29,53,.98) 0%,rgba(7,29,53,.91) 48%,rgba(7,29,53,.25) 78%,rgba(7,29,53,.45) 100%),url('assets/emir-tesisat-hero.png');background-position:65% center}.hero-inner{align-items:flex-start}.hero-copy{width:100%;padding-top:67px}.hero h1{font-size:49px}.lead{max-width:520px}.hero-signature{right:14px;bottom:20px}.trust-grid{grid-template-columns:1fr}.trust-grid>div,.trust-grid>a{min-height:76px;padding:14px 18px;border-right:0;border-bottom:1px solid var(--line)}.section{padding:76px 0}.section-heading{display:block}.section-heading>p{margin-top:18px}.about-grid{grid-template-columns:1fr}.about-visual{min-height:350px}.experience-card{right:-5px}.contact-box{grid-template-columns:1fr}.contact-list{padding:24px 30px}.footer-grid{grid-template-columns:1fr;gap:27px}}
 @media(max-width:480px){.hero,.hero-inner{min-height:735px}.hero-copy{padding-top:52px}.hero h1{font-size:42px;letter-spacing:-2.5px}.lead{font-size:14px}.hero-actions{flex-direction:column}.hero-actions .button{width:100%}.hero-points{gap:10px 15px}.hero-signature{min-width:155px}.section-heading h2,.about h2,.contact h2{font-size:31px;letter-spacing:-1.3px}.service-grid,.region-grid,.check-list{grid-template-columns:1fr}.service-grid p{min-height:0}.about-visual{min-height:290px;padding:27px}.logo-panel{padding:25px 20px}.contact-copy{padding:38px 25px}.contact-actions{align-items:stretch;flex-direction:column;gap:15px}.contact-list{padding:18px 25px}.copyright{gap:8px;flex-direction:column}.float-wa{width:54px;height:54px;padding:0;justify-content:center}.float-wa b{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* Okunabilirlik, dokunma hedefleri ve küçük ekran iyileştirmeleri */
+.hero-media{background-image:linear-gradient(90deg,rgba(7,29,53,.98) 0%,rgba(7,29,53,.93) 35%,rgba(7,29,53,.23) 68%,rgba(7,29,53,.08) 100%),url('assets/emir-tesisat-hero.webp')}
+.nav a,.button,.trust-grid strong{font-size:13px}
+.section-heading>p,.service-grid p,.about-copy>p:not(.kicker),.contact-copy>p:not(.kicker){font-size:14px}
+.service-grid a,.text-link,.footer-grid a{display:inline-flex;min-height:44px;align-items:center}
+.float-wa{right:max(20px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom));min-height:48px}
+
+@media(max-width:760px){
+  .hero-media{background-image:linear-gradient(180deg,rgba(7,29,53,.98) 0%,rgba(7,29,53,.91) 48%,rgba(7,29,53,.25) 78%,rgba(7,29,53,.45) 100%),url('assets/emir-tesisat-hero.webp')}
+  .nav a{min-height:48px;display:flex;align-items:center;font-size:14px}
+  .hero,.hero-inner{min-height:max(680px,calc(100svh - 70px))}
+  .hero-copy{padding-bottom:130px}
+  .hero-points li,.trust-grid small,.service-grid p,.about-copy>p:not(.kicker),.contact-copy>p:not(.kicker),.contact-list strong,.footer-grid a,.footer-grid span,.footer-brand p{font-size:13px}
+  .contact-list small,.owner small,.region-grid small,.hero-signature span{font-size:11px}
+}
+
+@media(max-width:480px){
+  .hero,.hero-inner{min-height:max(720px,calc(100svh - 70px))}
+  .hero-copy{padding-top:44px;padding-bottom:135px}
+  .hero h1{font-size:clamp(38px,12vw,42px)}
+  .hero-signature{bottom:18px}
+  .float-wa{right:max(14px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom))}
+}
