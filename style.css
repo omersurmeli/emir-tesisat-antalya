@@ -72,3 +72,4 @@ footer{padding-top:55px;color:#fff;background:#051628}.footer-grid{display:grid;
 .copyright{flex-wrap:wrap}
 .design-credit{margin-left:auto;padding-right:120px}
 @media(max-width:480px){.design-credit{margin-left:0;padding-right:0}}
+@media(min-width:481px){.design-credit{padding-right:180px}}
