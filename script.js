@@ -32,7 +32,7 @@ document.addEventListener("keydown", (event) => {
     menuButton.focus();
   }
 });
-window.addEventListener("resize", () => { if (window.innerWidth > 760) closeMenu(); });
+window.addEventListener("resize", () => { if (window.innerWidth > 900) closeMenu(); });
 window.addEventListener("scroll", () => header.classList.toggle("scrolled", window.scrollY > 16), { passive: true });
 document.getElementById("current-year").textContent = new Date().getFullYear();
 
