@@ -9,7 +9,7 @@
 .contact{background:#fff}.contact-box{display:grid;grid-template-columns:1.12fr .88fr;overflow:hidden;padding:0;color:#fff;background:var(--navy);border-radius:9px;box-shadow:var(--shadow)}.contact-copy{position:relative;padding:60px}.contact-copy:after{content:"";position:absolute;right:-65px;bottom:-95px;width:240px;height:240px;border:45px solid rgba(20,166,173,.09);border-radius:50%}.contact-copy .kicker{color:#71d9d5}.contact-copy>p:not(.kicker){max-width:565px;color:#bdccda;font-size:13px}.contact-actions{position:relative;z-index:1;display:flex;align-items:center;gap:24px;margin-top:26px}.text-link{color:#fff;font-size:12px;font-weight:800}.text-link span{color:var(--amber)}.contact-list{display:flex;justify-content:center;flex-direction:column;margin:0;padding:35px 42px;background:rgba(0,0,0,.17);font-style:normal}.contact-list>a,.contact-list>div{display:flex;align-items:center;gap:15px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.12)}.contact-list>*:last-child{border:0}.contact-list i{display:grid;width:41px;height:41px;place-items:center;flex:0 0 auto;color:#6ed9d5;background:rgba(255,255,255,.08);border-radius:5px;font-style:normal}.contact-list span{display:flex;flex-direction:column}.contact-list small{color:#8fa7bb;font-size:9px;text-transform:uppercase;letter-spacing:.7px}.contact-list strong{font-size:12px}
 footer{padding-top:55px;color:#fff;background:#051628}.footer-grid{display:grid;grid-template-columns:1.3fr .7fr .7fr;gap:70px;padding-bottom:41px}.footer-brand img{width:190px;height:auto;filter:brightness(0) invert(1)}.footer-brand p{max-width:310px;color:#8ca0b1;font-size:11px}.footer-grid>div{display:flex;align-items:flex-start;flex-direction:column;gap:7px}.footer-grid h2{margin:0 0 9px;color:#fff;font-size:11px;text-transform:uppercase;letter-spacing:1px}.footer-grid a,.footer-grid span{color:#8ca0b1;font-size:11px}.footer-grid a:hover{color:#fff}.copyright{display:flex;justify-content:space-between;padding-block:18px;border-top:1px solid rgba(255,255,255,.08);color:#6f8496;font-size:9px}.float-wa{position:fixed;right:20px;bottom:20px;z-index:900;display:flex;align-items:center;gap:8px;padding:13px 17px;color:#fff;background:var(--green);border-radius:50px;box-shadow:0 10px 30px rgba(24,168,102,.35);font-size:11px}.float-wa span{font-size:17px}
 @media(max-width:980px){.nav{gap:15px}.nav a{font-size:10px}.hero-copy{width:64%}.service-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:55px}.contact-copy{padding:45px}.footer-grid{gap:35px}}
-@media(max-width:760px){html{scroll-padding-top:70px}.container{width:min(100% - 28px,1180px)}body.menu-open{overflow:hidden}.topbar{display:none}.nav-row{height:70px}.brand img{width:165px}.menu-toggle{display:block;position:relative;z-index:2}.menu-toggle.active i:nth-of-type(1){transform:translateY(8px) rotate(45deg)}.menu-toggle.active i:nth-of-type(2){opacity:0}.menu-toggle.active i:nth-of-type(3){transform:translateY(-8px) rotate(-45deg)}.nav{position:fixed;top:70px;left:0;right:0;display:flex;align-items:stretch;flex-direction:column;gap:0;padding:10px 20px 24px;background:#fff;box-shadow:0 15px 30px rgba(7,29,53,.16);transform:translateY(-130%);opacity:0;visibility:hidden;transition:.25s}.nav.open{transform:none;opacity:1;visibility:visible}.nav a{padding:13px 5px;border-bottom:1px solid var(--line);font-size:13px}.nav-cta{justify-content:center;margin-top:10px;border:0!important}.hero,.hero-inner{min-height:700px}.hero-media{background-image:linear-gradient(180deg,rgba(7,29,53,.98) 0%,rgba(7,29,53,.91) 48%,rgba(7,29,53,.25) 78%,rgba(7,29,53,.45) 100%),url('assets/emir-tesisat-hero.png');background-position:65% center}.hero-inner{align-items:flex-start}.hero-copy{width:100%;padding-top:67px}.hero h1{font-size:49px}.lead{max-width:520px}.hero-signature{right:14px;bottom:20px}.trust-grid{grid-template-columns:1fr}.trust-grid>div,.trust-grid>a{min-height:76px;padding:14px 18px;border-right:0;border-bottom:1px solid var(--line)}.section{padding:76px 0}.section-heading{display:block}.section-heading>p{margin-top:18px}.about-grid{grid-template-columns:1fr}.about-visual{min-height:350px}.experience-card{right:-5px}.contact-box{grid-template-columns:1fr}.contact-list{padding:24px 30px}.footer-grid{grid-template-columns:1fr;gap:27px}}
+@media(max-width:900px){html{scroll-padding-top:70px}.container{width:min(100% - 28px,1180px)}body.menu-open{overflow:hidden}.topbar{display:none}.nav-row{height:70px}.brand img{width:165px}.menu-toggle{display:block;position:relative;z-index:2}.menu-toggle.active i:nth-of-type(1){transform:translateY(8px) rotate(45deg)}.menu-toggle.active i:nth-of-type(2){opacity:0}.menu-toggle.active i:nth-of-type(3){transform:translateY(-8px) rotate(-45deg)}.nav{position:fixed;top:70px;left:0;right:0;display:flex;align-items:stretch;flex-direction:column;gap:0;padding:10px 20px 24px;background:#fff;box-shadow:0 15px 30px rgba(7,29,53,.16);transform:translateY(-130%);opacity:0;visibility:hidden;transition:.25s}.nav.open{transform:none;opacity:1;visibility:visible}.nav a{padding:13px 5px;border-bottom:1px solid var(--line);font-size:13px}.nav-cta{justify-content:center;margin-top:10px;border:0!important}.hero,.hero-inner{min-height:700px}.hero-media{background-image:linear-gradient(180deg,rgba(7,29,53,.98) 0%,rgba(7,29,53,.91) 48%,rgba(7,29,53,.25) 78%,rgba(7,29,53,.45) 100%),url('assets/emir-tesisat-hero.png');background-position:65% center}.hero-inner{align-items:flex-start}.hero-copy{width:100%;padding-top:67px}.hero h1{font-size:49px}.lead{max-width:520px}.hero-signature{right:14px;bottom:20px}.trust-grid{grid-template-columns:1fr}.trust-grid>div,.trust-grid>a{min-height:76px;padding:14px 18px;border-right:0;border-bottom:1px solid var(--line)}.section{padding:76px 0}.section-heading{display:block}.section-heading>p{margin-top:18px}.about-grid{grid-template-columns:1fr}.about-visual{min-height:350px}.experience-card{right:-5px}.contact-box{grid-template-columns:1fr}.contact-list{padding:24px 30px}.footer-grid{grid-template-columns:1fr;gap:27px}}
 @media(max-width:480px){.hero,.hero-inner{min-height:735px}.hero-copy{padding-top:52px}.hero h1{font-size:42px;letter-spacing:-2.5px}.lead{font-size:14px}.hero-actions{flex-direction:column}.hero-actions .button{width:100%}.hero-points{gap:10px 15px}.hero-signature{min-width:155px}.section-heading h2,.about h2,.contact h2{font-size:31px;letter-spacing:-1.3px}.service-grid,.region-grid,.check-list{grid-template-columns:1fr}.service-grid p{min-height:0}.about-visual{min-height:290px;padding:27px}.logo-panel{padding:25px 20px}.contact-copy{padding:38px 25px}.contact-actions{align-items:stretch;flex-direction:column;gap:15px}.contact-list{padding:18px 25px}.copyright{gap:8px;flex-direction:column}.float-wa{width:54px;height:54px;padding:0;justify-content:center}.float-wa b{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 
@@ -20,7 +20,7 @@ footer{padding-top:55px;color:#fff;background:#051628}.footer-grid{display:grid;
 .service-grid a,.text-link,.footer-grid a{display:inline-flex;min-height:44px;align-items:center}
 .float-wa{right:max(20px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom));min-height:48px}
 
-@media(max-width:760px){
+@media(max-width:900px){
   .hero-media{background-image:linear-gradient(180deg,rgba(7,29,53,.98) 0%,rgba(7,29,53,.91) 48%,rgba(7,29,53,.25) 78%,rgba(7,29,53,.45) 100%),url('assets/emir-tesisat-hero.webp')}
   .nav a{min-height:48px;display:flex;align-items:center;font-size:14px}
   .hero,.hero-inner{min-height:max(680px,calc(100svh - 70px))}
@@ -52,7 +52,7 @@ footer{padding-top:55px;color:#fff;background:#051628}.footer-grid{display:grid;
 .faq-intro{max-width:430px;margin:22px 0;color:var(--muted);font-size:14px}.text-call{display:inline-flex;align-items:center;gap:14px;padding-bottom:6px;border-bottom:2px solid var(--amber);font-size:17px;font-weight:800}.text-call span{color:var(--teal)}
 .accordion{border-top:1px solid var(--line)}.accordion article{border-bottom:1px solid var(--line)}.accordion button{display:flex;width:100%;align-items:center;justify-content:space-between;gap:20px;padding:22px 4px;color:var(--ink);background:transparent;border:0;text-align:left;cursor:pointer;font-weight:800}.accordion button i{display:grid;width:30px;height:30px;place-items:center;flex:0 0 auto;color:var(--teal);background:var(--teal-light);border-radius:50%;font-style:normal;font-size:18px;transition:transform .2s}.accordion button[aria-expanded="true"] i{transform:rotate(45deg)}.faq-answer p{margin:0;padding:0 50px 22px 4px;color:var(--muted);font-size:13px}
 @media(max-width:980px){.why-grid{grid-template-columns:repeat(2,1fr)}.faq-grid{gap:50px}}
-@media(max-width:760px){.faq-grid{grid-template-columns:1fr}.review-band{grid-template-columns:1fr;gap:20px}}
+@media(max-width:900px){.faq-grid{grid-template-columns:1fr}.review-band{grid-template-columns:1fr;gap:20px}}
 @media(max-width:480px){.why-grid{grid-template-columns:1fr}.why-grid article{min-height:0}.review-band{padding:24px 20px}.faq h2{font-size:31px;letter-spacing:-1.3px}}
 
 /* Hizmet kartı fotoğrafları */
@@ -73,3 +73,42 @@ footer{padding-top:55px;color:#fff;background:#051628}.footer-grid{display:grid;
 .design-credit{margin-left:auto;padding-right:120px}
 @media(max-width:480px){.design-credit{margin-left:0;padding-right:0}}
 @media(min-width:481px){.design-credit{padding-right:180px}}
+
+/* Mobile-first service discovery and direct contact. */
+:root{--muted:#526373;--teal:#087e85}
+.hero-copy{width:60%}.hero h1{font-size:clamp(42px,5.4vw,72px);line-height:1.08;letter-spacing:-2px}
+.eyebrow{font-size:14px;letter-spacing:.6px;line-height:1.6}
+.lead strong{display:block;color:#7de0dd;font-size:1.25rem;margin-bottom:8px}
+.hero-hours{font-size:14px;color:#fff;margin:20px 0 12px}.hero-hours span{color:#ccdae5}
+.hero-services{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:5px;font-size:14px}
+.hero-points{margin-top:12px}.hero-points li,.button small{font-size:12px}
+.button,.nav a,.service-grid a,.trust-grid strong,.region-grid small,.text-link{font-size:14px}
+.section-heading>p,.service-grid p,.why-grid p,.about-copy>p:not(.kicker),.contact-copy>p:not(.kicker),.faq-intro,.faq-answer p{font-size:16px}
+.trust-grid small,.contact-list strong,.footer-grid a,.footer-grid span,.footer-brand p{font-size:14px}
+.contact-list small,.owner small,.hero-signature span{font-size:12px}
+.service-grid article{display:flex;flex-direction:column}.service-grid a{margin-top:auto;padding-top:18px;min-height:48px}
+.service-grid p{padding-bottom:12px}.service-photo{flex-shrink:0}
+.region-grid a{position:relative;z-index:1;display:inline-flex;align-items:center;min-height:48px;font-size:14px;font-weight:800;text-decoration:underline;text-underline-offset:4px;margin-top:12px}
+.region-grid div{justify-content:flex-start}.region-grid strong{margin-top:10px}
+.review-band h3{font-size:20px;margin:0}.review-band>div{display:block}.review-band p{font-size:14px}.review-band .review-description{font-size:16px;color:#d8e3eb;margin:0}
+.review-band .button{white-space:normal;text-align:center}.mobile-contact{display:none}
+.accordion button{font-size:16px}.faq-answer p{padding-right:12px}
+@media(max-width:1100px){.review-band{grid-template-columns:1fr;gap:18px}.review-band .button{justify-self:start}.nav{gap:14px}}
+@media(max-width:900px){
+ html{scroll-padding-bottom:100px}body{padding-bottom:calc(82px + env(safe-area-inset-bottom))}
+ .hero,.hero-inner{min-height:0}.hero-copy{width:100%;padding:32px 0 120px}
+ .hero h1{font-size:clamp(38px,8vw,58px);letter-spacing:-1.5px}.hero .lead{font-size:16px;margin:18px 0 22px}
+ .hero-media{background-position:65% center}.hero-actions{flex-direction:row}.hero-actions .button{flex:1;min-width:0;padding:12px;font-size:14px}
+ .eyebrow{font-size:12px;letter-spacing:0}.hero-points{gap:12px}.hero-points li{font-size:12px}
+ .section{padding:54px 0}.section-heading{margin-bottom:28px}.why-grid article{padding:24px;min-height:0}
+ .why-grid article>span{margin-bottom:18px}.service-grid{grid-template-columns:1fr 1fr}
+ .region-grid{grid-template-columns:1fr 1fr}.region-grid div{padding:18px}.region-grid small{font-size:14px}
+ .trust-grid small{font-size:14px}.hero-signature span{font-size:12px}.float-wa{display:none}
+ .mobile-contact{position:fixed;inset:auto 0 0;z-index:1100;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px max(14px,env(safe-area-inset-right)) calc(12px + env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left));background:#fff;box-shadow:0 -4px 20px #071d3526}
+ .mobile-contact a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:10px 6px;border-radius:7px;font-size:14px;font-weight:800;text-align:center}
+ .mobile-call{background:var(--amber);color:var(--navy)}.mobile-whatsapp{background:#087e4e;color:#fff}
+ .nav{max-height:calc(100dvh - 160px - env(safe-area-inset-bottom));overflow-y:auto;overscroll-behavior:contain}
+ .design-credit{padding-right:0}.contact-list strong{overflow-wrap:anywhere}
+}
+@media(max-width:520px){.service-grid{grid-template-columns:1fr}.hero-actions{flex-direction:column}.hero-actions .button{width:100%;min-height:54px}.hero-copy{padding-top:26px}.hero-hours{font-size:14px}.region-grid{gap:10px}.region-grid div{padding:16px 12px}.region-grid strong{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.service-grid article:hover,.button:hover,.service-grid article:hover .service-photo img{transform:none}}
