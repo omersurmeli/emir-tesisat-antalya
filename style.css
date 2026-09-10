@@ -73,3 +73,42 @@ footer{padding-top:55px;color:#fff;background:#051628}.footer-grid{display:grid;
 .design-credit{margin-left:auto;padding-right:120px}
 @media(max-width:480px){.design-credit{margin-left:0;padding-right:0}}
 @media(min-width:481px){.design-credit{padding-right:180px}}
+
+/* Mobile-first service discovery and direct contact. */
+:root{--muted:#526373;--teal:#087e85}
+.hero-copy{width:60%}.hero h1{font-size:clamp(42px,5.4vw,72px);line-height:1.08;letter-spacing:-2px}
+.eyebrow{font-size:14px;letter-spacing:.6px;line-height:1.6}
+.lead strong{display:block;color:#7de0dd;font-size:1.25rem;margin-bottom:8px}
+.hero-hours{font-size:14px;color:#fff;margin:20px 0 12px}.hero-hours span{color:#ccdae5}
+.hero-services{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:5px;font-size:14px}
+.hero-points{margin-top:12px}.hero-points li,.button small{font-size:12px}
+.button,.nav a,.service-grid a,.trust-grid strong,.region-grid small,.text-link{font-size:14px}
+.section-heading>p,.service-grid p,.why-grid p,.about-copy>p:not(.kicker),.contact-copy>p:not(.kicker),.faq-intro,.faq-answer p{font-size:16px}
+.trust-grid small,.contact-list strong,.footer-grid a,.footer-grid span,.footer-brand p{font-size:14px}
+.contact-list small,.owner small,.hero-signature span{font-size:12px}
+.service-grid article{display:flex;flex-direction:column}.service-grid a{margin-top:auto;padding-top:18px;min-height:48px}
+.service-grid p{padding-bottom:12px}.service-photo{flex-shrink:0}
+.region-grid a{position:relative;z-index:1;display:inline-flex;align-items:center;min-height:48px;font-size:14px;font-weight:800;text-decoration:underline;text-underline-offset:4px;margin-top:12px}
+.region-grid div{justify-content:flex-start}.region-grid strong{margin-top:10px}
+.review-band h3{font-size:20px;margin:0}.review-band>div{display:block}.review-band p{font-size:14px}.review-band .review-description{font-size:16px;color:#d8e3eb;margin:0}
+.review-band .button{white-space:normal;text-align:center}.mobile-contact{display:none}
+.accordion button{font-size:16px}.faq-answer p{padding-right:12px}
+@media(max-width:1100px){.review-band{grid-template-columns:1fr;gap:18px}.review-band .button{justify-self:start}.nav{gap:14px}}
+@media(max-width:760px){
+ html{scroll-padding-bottom:100px}body{padding-bottom:calc(82px + env(safe-area-inset-bottom))}
+ .hero,.hero-inner{min-height:0}.hero-copy{width:100%;padding:32px 0 120px}
+ .hero h1{font-size:clamp(38px,8vw,58px);letter-spacing:-1.5px}.hero .lead{font-size:16px;margin:18px 0 22px}
+ .hero-media{background-position:65% center}.hero-actions{flex-direction:row}.hero-actions .button{flex:1;min-width:0;padding:12px;font-size:14px}
+ .eyebrow{font-size:12px;letter-spacing:0}.hero-points{gap:12px}.hero-points li{font-size:12px}
+ .section{padding:54px 0}.section-heading{margin-bottom:28px}.why-grid article{padding:24px;min-height:0}
+ .why-grid article>span{margin-bottom:18px}.service-grid{grid-template-columns:1fr 1fr}
+ .region-grid{grid-template-columns:1fr 1fr}.region-grid div{padding:18px}.region-grid small{font-size:14px}
+ .trust-grid small{font-size:14px}.hero-signature span{font-size:12px}.float-wa{display:none}
+ .mobile-contact{position:fixed;inset:auto 0 0;z-index:1100;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px max(14px,env(safe-area-inset-right)) calc(12px + env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left));background:#fff;box-shadow:0 -4px 20px #071d3526}
+ .mobile-contact a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:10px 6px;border-radius:7px;font-size:14px;font-weight:800;text-align:center}
+ .mobile-call{background:var(--amber);color:var(--navy)}.mobile-whatsapp{background:#087e4e;color:#fff}
+ .nav{max-height:calc(100dvh - 160px - env(safe-area-inset-bottom));overflow-y:auto;overscroll-behavior:contain}
+ .design-credit{padding-right:0}.contact-list strong{overflow-wrap:anywhere}
+}
+@media(max-width:520px){.service-grid{grid-template-columns:1fr}.hero-actions{flex-direction:column}.hero-actions .button{width:100%;min-height:54px}.hero-copy{padding-top:26px}.hero-hours{font-size:14px}.region-grid{gap:10px}.region-grid div{padding:16px 12px}.region-grid strong{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.service-grid article:hover,.button:hover,.service-grid article:hover .service-photo img{transform:none}}
